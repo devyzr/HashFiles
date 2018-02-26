@@ -54,7 +54,7 @@ class HashFiles():
                 if not data:
                     break
                 sha.update(data)
-        file_and_hash = file + ' : ' + sha.hexdigest()
+        file_and_hash = file + ':\n' + sha.hexdigest() + '\n'
         return file_and_hash
 
 
